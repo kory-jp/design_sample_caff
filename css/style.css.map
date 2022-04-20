@@ -1,0 +1,16 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,IAAI,CAAC;EACL,WAAW,EAAE,iCAAiC;CAC7C",
+    "sources": [
+        "style.scss",
+        "breakpoints/_base.scss",
+        "breakpoints/_480up.scss",
+        "breakpoints/_600up.scss",
+        "breakpoints/_960up.scss",
+        "breakpoints/_1280up.scss",
+        "breakpoints/_2x.scss",
+        "breakpoints/_print.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
