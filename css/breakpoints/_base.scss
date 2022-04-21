@@ -1,3 +1,52 @@
 body {
-font-family: 'Merriweather', 'Klee One', serif;
+  font-family: "Merriweather", "Klee One", serif;
+  background-color: $cGray2;
+}
+
+// --- フォントサイズ ---
+
+.font-xs {
+  font-size: 8px;
+}
+
+.font-sm {
+  font-size: 16px;
+}
+
+.font-md {
+  font-size: 24px;
+}
+
+// --- ボトムサイズ ---
+
+mb-sm {
+  margin-bottom: 40px !important;
+}
+
+mb-md {
+  margin-bottom: 80px !important;
+}
+
+mb-lg {
+  margin-bottom: 160px !important;
+}
+
+mb-xl {
+  margin-bottom: 240px !important;
+}
+
+.content-with {
+  width: 90%;
+  margin: 0 auto;
+  max-width: $contentMaxWidth;
+}
+
+.header {
+  background-color: $cGray1;
+  height: 80px;
+
+  img {
+    width: 160px;
+    height: 40px;
+  }
 }

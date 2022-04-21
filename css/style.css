@@ -1,4 +1,82 @@
 body {
-  font-family: 'Merriweather', 'Klee One', serif;
+  font-family: "Merriweather", "Klee One", serif;
+  background-color: #F4F4F4;
+}
+
+.font-xs {
+  font-size: 8px;
+}
+
+.font-sm {
+  font-size: 16px;
+}
+
+.font-md {
+  font-size: 24px;
+}
+
+mb-sm {
+  margin-bottom: 40px !important;
+}
+
+mb-md {
+  margin-bottom: 80px !important;
+}
+
+mb-lg {
+  margin-bottom: 160px !important;
+}
+
+mb-xl {
+  margin-bottom: 240px !important;
+}
+
+.content-with {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.header {
+  background-color: #FFFFFF;
+  height: 80px;
+}
+
+.header img {
+  width: 160px;
+  height: 40px;
+}
+
+@media (min-width: 960px) {
+  .font-xs {
+    font-size: 24px;
+  }
+  .font-sm {
+    font-size: 32px;
+  }
+  .font-md {
+    font-size: 40px;
+  }
+  .font-xs {
+    font-size: 8px;
+  }
+  .font-sm {
+    font-size: 16px;
+  }
+  .font-md {
+    font-size: 24px;
+  }
+  mb-sm {
+    margin-bottom: 80px !important;
+  }
+  mb-md {
+    margin-bottom: 80px !important;
+  }
+  mb-lg {
+    margin-bottom: 240px !important;
+  }
+  mb-xl {
+    margin-bottom: 320 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
