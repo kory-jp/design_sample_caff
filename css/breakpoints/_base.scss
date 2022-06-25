@@ -19,20 +19,53 @@ body {
 
 // --- ボトムサイズ ---
 
-mb-sm {
+.mb-sm {
   margin-bottom: 40px !important;
 }
 
-mb-md {
+.mb-md {
   margin-bottom: 80px !important;
 }
 
-mb-lg {
+.mb-lg {
   margin-bottom: 160px !important;
 }
 
-mb-xl {
+.mb-xl {
   margin-bottom: 240px !important;
+}
+
+// パディングサイズ
+
+.pd-left {
+  padding-left: 16px;
+}
+
+.pd-right {
+  padding-right: 16px;
+}
+
+// --- コンテンツデザイン ---
+
+// モーダル
+
+.modal {
+  background-color: $cGray1;
+  position: absolute;
+  max-width: 70%;
+  height: 100vh;
+  left: -300px;
+  overflow: hidden;
+  transition: all 0.7s;
+  z-index: 30;
+
+  .modal-inner {
+    padding: 24px;
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
 
 .content-with {
@@ -44,9 +77,81 @@ mb-xl {
 .header {
   background-color: $cGray1;
   height: 80px;
+  display: flex;
+  align-items: center;
 
-  img {
-    width: 160px;
-    height: 40px;
+  .header-inner {
+    flex-basis: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .company-logo-img {
+      img {
+        width: 160px;
+        height: 40px;
+      }
+    }
+
+    .site-nav {
+      display: none;
+    }
+
+    .humburger-menu {
+      .humburger-btn {
+        background-color: transparent;
+        border: none;
+
+        & > span {
+          background-color: $cGray6;
+          width: 40px;
+          height: 1px;
+          display: block;
+          margin-bottom: 16px;
+          transition: transform 0.7s;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.mask {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  background-color: $cGray5;
+  opacity: 0.5;
+  z-index: 20;
+  display: none;
+  transition: all 0.7s;
+}
+
+// ---- ヘッダーオープン ---
+.menu-open {
+  & .humburger-btn {
+    & > span {
+      &:nth-child(1) {
+        transform: translateY(17px) rotate(-315deg);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:nth-child(3) {
+        transform: translateY(-17px) rotate(315deg);
+      }
+    }
+  }
+
+  & .mask {
+    display: block;
+  }
+
+  & .modal {
+    left: 0;
   }
 }
