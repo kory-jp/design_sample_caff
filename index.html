@@ -15,15 +15,47 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <div>
-        <img src="/images/companyLogo.png" alt="company-logo" />
+    <!-- モーダル -->
+    <div class="modal">
+      <div class="modal-inner">
+        <p>ポートフォリオサイトです</p>
+        <a href="https://github.com/kory-jp/design_sample_caff">詳細はこちら</a>
       </div>
-    </header>
-    <!-- ----- メイン ----- -->
-    <main></main>
+    </div>
+    <!-- メインコンテンツ -->
+    <div class="container">
+      <!-- ----- ヘッダー ----- -->
+      <header class="header">
+        <div class="header-inner pd-left pd-right">
+          <div class="company-logo-img">
+            <img src="/images/companyLogo.png" alt="company-logo" />
+          </div>
+          <div class="site-nav">
+            <p>ポートフォリオサイトです</p>
+            <p>
+              <a href="https://github.com/kory-jp/design_sample_caff"
+                >kory-jp/design_sample_caff</a
+              >
+            </p>
+          </div>
+          <div class="humburger-menu">
+            <button class="humburger-btn" id="humburger_btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+      <!-- ヘッダーオープンマスク -->
+      <div class="mask"></div>
+      <!-- ----- メイン ----- -->
+      <main></main>
 
-    <!-- ----- フッター ----- -->
-    <footer></footer>
+      <!-- ----- フッター ----- -->
+      <footer></footer>
+    </div>
+    <!-- -----　インポート ----- -->
+    <script src="js/main.js"></script>
   </body>
 </html>

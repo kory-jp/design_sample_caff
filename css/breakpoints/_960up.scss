@@ -1,4 +1,3 @@
-
 // --- フォントサイズ ---
 .font-xs {
   font-size: 24px;
@@ -14,7 +13,6 @@
 
 // --- ボトムサイズ ---
 
-
 .font-xs {
   font-size: 8px;
 }
@@ -29,18 +27,60 @@
 
 // --- ボトムサイズ ---
 
-mb-sm {
+.mb-sm {
   margin-bottom: 80px !important;
 }
 
-mb-md {
+.mb-md {
   margin-bottom: 80px !important;
 }
 
-mb-lg {
+.mb-lg {
   margin-bottom: 240px !important;
 }
 
-mb-xl {
+.mb-xl {
   margin-bottom: 320 !important;
+}
+
+// パディングサイズ
+
+.pd-left {
+  padding-left: 32px;
+}
+
+.pd-right {
+  padding-right: 32px;
+}
+
+// ---メインコンテンツ---
+
+.header {
+  height: 120px;
+  .header-inner {
+    .company-logo-img {
+      // padding-top: 0;
+      img {
+        width: 240px;
+        height: 64px;
+      }
+    }
+
+    .site-nav {
+      display: block;
+
+      p {
+        margin: 0;
+        margin-top: 8px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $cGray6;
+      }
+    }
+  }
+  .humburger-menu {
+    display: none;
+  }
 }
