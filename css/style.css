@@ -131,6 +131,65 @@ body {
   transition: all 0.7s;
 }
 
+.swiper {
+  overflow: visible !important;
+  height: 480px !important;
+}
+
+.swiper .swiper-slide {
+  height: 480px;
+  overflow: hidden;
+}
+
+.swiper .swiper-slide .imageLogo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.swiper .swiper-slide .imageLogo > img {
+  height: 40px;
+  width: 160px;
+}
+
+.swiper .swiper-slide .hero__title {
+  position: absolute;
+  color: #FFFFFF;
+  top: 10%;
+  left: 10%;
+  z-index: 10;
+}
+
+.swiper .swiper-slide .cover-images {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: -webkit-transform 10s ease-out;
+  transition: -webkit-transform 10s ease-out;
+  transition: transform 10s ease-out;
+  transition: transform 10s ease-out, -webkit-transform 10s ease-out;
+}
+
+.swiper .swiper-slide-active .cover-images {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.swiper .swiper-button-prev {
+  color: #FFFFFF;
+}
+
+.swiper .swiper-button-next {
+  color: #FFFFFF;
+}
+
 .menu-open .humburger-btn > span:nth-child(1) {
   -webkit-transform: translateY(17px) rotate(-315deg);
           transform: translateY(17px) rotate(-315deg);
@@ -153,6 +212,11 @@ body {
   left: 0;
 }
 
+.swiper {
+  width: 100%;
+  height: 300px;
+}
+
 @media (min-width: 960px) {
   .font-xs {
     font-size: 24px;
@@ -162,15 +226,6 @@ body {
   }
   .font-md {
     font-size: 40px;
-  }
-  .font-xs {
-    font-size: 8px;
-  }
-  .font-sm {
-    font-size: 16px;
-  }
-  .font-md {
-    font-size: 24px;
   }
   .mb-sm {
     margin-bottom: 80px !important;
@@ -210,6 +265,16 @@ body {
   }
   .header .humburger-menu {
     display: none;
+  }
+  .swiper {
+    height: 560px !important;
+  }
+  .swiper .swiper-slide {
+    height: 560px;
+  }
+  .swiper .swiper-slide .imageLogo > img {
+    height: 80px;
+    width: 320px;
   }
 }
 /*# sourceMappingURL=style.css.map */

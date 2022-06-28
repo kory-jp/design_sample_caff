@@ -12,15 +12,16 @@
     <link rel="stylesheet" href="css/venders/typography.css" />
     <link rel="stylesheet" href="css/venders/forms.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/venders/swiper-bundle.min.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- モーダル -->
     <div class="modal">
-      <div class="modal-inner">
+      <nav class="modal-inner">
         <p>ポートフォリオサイトです</p>
         <a href="https://github.com/kory-jp/design_sample_caff">詳細はこちら</a>
-      </div>
+      </nav>
     </div>
     <!-- メインコンテンツ -->
     <div class="container">
@@ -30,14 +31,14 @@
           <div class="company-logo-img">
             <img src="/images/companyLogo.png" alt="company-logo" />
           </div>
-          <div class="site-nav">
+          <nav class="site-nav">
             <p>ポートフォリオサイトです</p>
             <p>
               <a href="https://github.com/kory-jp/design_sample_caff"
                 >kory-jp/design_sample_caff</a
               >
             </p>
-          </div>
+          </nav>
           <div class="humburger-menu">
             <button class="humburger-btn" id="humburger_btn">
               <span></span>
@@ -50,12 +51,61 @@
       <!-- ヘッダーオープンマスク -->
       <div class="mask"></div>
       <!-- ----- メイン ----- -->
-      <main></main>
+      <main id="content">
+        <!-- ---トップヒーロースライダー--- -->
+        <div class="hero-slider">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="imageLogo">
+                  <img src="./images/companyLogoWhite.png" alt="imageLogo" />
+                </div>
+                <img
+                  class="cover-images"
+                  src="./images/wu-yi-mk7zhx5lFbc-unsplash.jpg"
+                  alt="TopImage1"
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title font-md">Light and green space</div>
+                <img
+                  class="cover-images"
+                  src="./images/fakhrul-fadillah-OFauWbPMypQ-unsplash.jpg"
+                  alt="TopImage2"
+                />
+              </div>
+              <div class="swiper-slide">
+                <div class="hero__title font-md">
+                  Healthy and delicious meal
+                </div>
+                <img
+                  class="cover-images"
+                  src="./images/ola-mishchenko-XqYlvd5DGKA-unsplash.jpg"
+                  alt="TopImage3"
+                />
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <!-- If we need scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+          </div>
+        </div>
+      </main>
 
       <!-- ----- フッター ----- -->
       <footer></footer>
     </div>
-    <!-- -----　インポート ----- -->
+    <script src="js/venders/swiper.js"></script>
+    <script src="js/lib/hero-slider.js"></script>
     <script src="js/main.js"></script>
+    <!-- ----- インポート ----- -->
   </body>
 </html>

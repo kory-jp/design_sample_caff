@@ -13,20 +13,6 @@
 
 // --- ボトムサイズ ---
 
-.font-xs {
-  font-size: 8px;
-}
-
-.font-sm {
-  font-size: 16px;
-}
-
-.font-md {
-  font-size: 24px;
-}
-
-// --- ボトムサイズ ---
-
 .mb-sm {
   margin-bottom: 80px !important;
 }
@@ -82,5 +68,20 @@
   }
   .humburger-menu {
     display: none;
+  }
+}
+
+.swiper {
+  height: 560px !important;
+
+  .swiper-slide {
+    height: 560px;
+
+    .imageLogo {
+      & > img {
+        height: 80px;
+        width: 320px;
+      }
+    }
   }
 }
